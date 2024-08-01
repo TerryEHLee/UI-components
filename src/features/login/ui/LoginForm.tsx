@@ -3,7 +3,7 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { Box, Button, InputAdornment, TextField } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { IconButton } from "@/shared/ui/button/IconButton.tsx";
+import { IconButton } from "@/shared/ui/button";
 import type { LoginFormSchema } from "@/features/login";
 import { loginFormSchema, LoginOptions } from "@/features/login";
 
@@ -31,7 +31,6 @@ export const LoginForm = () => {
           <div className='login-box--wrapper'>
             <header>
               <div className='header-top'>
-               
                 <span className='header-text'>Remote Monitoring Services</span>
               </div>
             </header>
