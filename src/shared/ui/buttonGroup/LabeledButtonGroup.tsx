@@ -1,12 +1,7 @@
 import { ButtonGroup, Stack } from "@mui/material";
-import { ButtonGroupOptionData } from "@/shared/ui/buttonGroup/lib/data.ts";
-import { ContainedButton } from "../../button/ContainedButton";
-
-type LabeledButtonGroupProps = {
-  moduleName: string;
-  size?: "small" | "medium" | "large";
-  spacing?: number;
-};
+import { ButtonGroupOptionData } from "@/shared/ui/buttonGroup";
+import { ContainedButton } from "@/shared/ui/button";
+import { LabeledButtonGroupProps } from "@/shared/ui/buttonGroup";
 
 export const LabeledButtonGroup = ({
   moduleName,
