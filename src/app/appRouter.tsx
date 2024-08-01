@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage } from "@/pages/main";
-import { LoginPage } from "@/pages/login/ui/Page";
+import { LoginPage } from "@/pages/login";
 
 export const appRouter = () =>
   createBrowserRouter([
