@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import { DatePicker } from 'src/new/components/ui/date-picker/date-picker';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { Modal, DatePicker } from '@/shared/ui';
+import type { SpecificModalProps } from '@/shared/ui';
 
-export const StartDateModal = ({ open, onClose }) => {
+export const StartDateModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <div>
             <Modal

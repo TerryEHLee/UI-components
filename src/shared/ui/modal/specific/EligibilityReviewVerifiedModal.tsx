@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { Modal } from '@/shared/ui/modal';
+import type { SpecificModalProps } from '@/shared/ui/modal';
 
-export const EligibilityReviewVerifiedModal = ({ open, onClose }) => {
+export const EligibilityReviewVerifiedModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <Modal
             open={open}

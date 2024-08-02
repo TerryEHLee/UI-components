@@ -1,9 +1,9 @@
-import './modal.less';
 import { InfoOutlined } from '@mui/icons-material';
 import { Box, Typography } from '@mui/material';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { Modal } from '@/shared/ui/modal';
+import type { SpecificModalProps } from '@/shared/ui/modal';
 
-export const NameModal = ({ open, onClose }) => {
+export const NameModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <div>
             <Modal

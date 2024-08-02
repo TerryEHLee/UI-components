@@ -1,22 +1,9 @@
 import './modal.less';
 import { Close } from '@mui/icons-material';
 import { Box, Modal as MuiModal, Typography } from '@mui/material';
-import { ContainedButton } from 'src/new/components/ui/button/contained-button';
-import { IconButton } from 'src/new/components/ui/button/icon-button';
+import { ContainedButton, IconButton } from '@/shared/ui/button'
+import type { ModalProps } from '../type';
 
-type ModalProps = {
-    children: React.ReactNode;
-    open: boolean;
-    onClose: () => void;
-    title: string;
-    sizeModal?: 'modal-sm' | 'modal-md' | 'modal-lg' | 'modal-xl' | 'modal-xs';
-    sizeButton?: 'small' | 'medium' | 'large';
-    isPrimaryButtonDisabled?: boolean;
-    PrimaryButtonLabel?: string | null;
-    PrimaryButtonAction?: () => void;
-    isSecondaryButtonDisabled?: boolean;
-    SecondaryButtonLabel?: string | null;
-};
 
 export const Modal = ({
     children,

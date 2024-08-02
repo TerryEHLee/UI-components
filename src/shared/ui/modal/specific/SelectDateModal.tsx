@@ -1,14 +1,10 @@
 import { Box, Typography } from '@mui/material';
-import { LabeledButtonGroup } from 'src/new/components/ui/button-group/labeled-button-group';
-import { DatePicker } from 'src/new/components/ui/date-picker/date-picker';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { LabeledButtonGroup } from '@/shared/ui/buttonGroup';
+import { DatePicker } from '@/shared/ui/datePicker';
+import { Modal } from '@/shared/ui/modal';
+import type { SpecificModalProps } from '@/shared/ui/modal';
 
-type SelectDateModalProps = {
-    open: boolean;
-    onClose: () => void;
-};
-
-export const SelectDateModal = ({ open, onClose }: SelectDateModalProps) => {
+export const SelectDateModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <div>
             <Modal

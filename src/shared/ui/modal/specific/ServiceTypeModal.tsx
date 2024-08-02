@@ -1,8 +1,8 @@
 import { Box, Card, Typography } from '@mui/material';
-import { Checkbox } from 'src/new/components/ui/checkbox/checkbox';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { Modal,Checkbox } from '@/shared/ui';
+import type { SpecificModalProps } from '@/shared/ui';
 
-export const ServiceTypeModal = ({ open, onClose }) => {
+export const ServiceTypeModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <div>
             <Modal

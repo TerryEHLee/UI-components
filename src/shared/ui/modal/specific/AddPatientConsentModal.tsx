@@ -1,8 +1,9 @@
 import { Box, Typography } from '@mui/material';
-import { Modal } from 'src/new/components/ui/modal/modal';
-import { RadioGroup } from 'src/new/components/ui/radio-group/radio-group';
+import { Modal } from '@/shared/ui/modal';
+import { RadioGroup } from '@/shared/ui/radioGroup';
+import type { SpecificModalProps } from '../type';
 
-export const AddAPatientConsentModal = ({ open, onClose }) => {
+export const AddAPatientConsentModal = ({ open, onClose }: SpecificModalProps) => {
     return (
         <Modal
             open={open}

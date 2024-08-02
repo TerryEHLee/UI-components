@@ -1,4 +1,4 @@
-import { SelectDateModal } from './select-date-modal';
+import { SelectDateModal } from './SelectDateModal';
 import { DateRange } from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Box, Tooltip, Typography } from '@mui/material';
@@ -7,12 +7,13 @@ import { LocalizationProvider } from '@mui/x-date-pickers-pro/LocalizationProvid
 import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { IconButton } from 'src/new/components/ui/button/icon-button';
-import { Checkbox } from 'src/new/components/ui/checkbox/checkbox';
-import { DataGridPro } from 'src/new/components/ui/data-grid/data-grid';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { IconButton } from "@/shared/ui/button";
+import { Checkbox } from '@/shared/ui/checkbox';
+import { DataGridPro } from '@/shared/ui/dataGrid';
+import { Modal } from '@/shared/ui/modal';
+import type { SpecificModalProps } from '@/shared/ui';
 
-export const AlertsModal = ({ open, onClose }) => {
+export const AlertsModal = ({ open, onClose }: SpecificModalProps) => {
     const [isSelectDateOpen, setIsSelectDateOpen] = useState(false);
     const handleSelectDateToggle = () => setIsSelectDateOpen((prevState) => !prevState);
 

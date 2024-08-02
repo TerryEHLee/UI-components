@@ -1,12 +1,12 @@
-import { AddAPatientConsentModal } from './add-patient-consent-modal';
+import { AddAPatientConsentModal } from './AddPatientConsentModal';
 import { Delete } from '@mui/icons-material';
 import { Box, Card, Typography } from '@mui/material';
 import { useState } from 'react';
-import { ContainedButton } from 'src/new/components/ui/button/contained-button';
-import { IconButton } from 'src/new/components/ui/button/icon-button';
-import { Modal } from 'src/new/components/ui/modal/modal';
+import { IconButton, ContainedButton } from "@/shared/ui/button";
+import { Modal } from '@/shared/ui/modal';
+import type { SpecificModalProps } from '@/shared/ui/modal';
 
-export const PatientConsentModal = ({ open, onClose }) => {
+export const PatientConsentModal = ({ open, onClose }: SpecificModalProps) => {
     const [isAddAPatientConsentOpen, setIsAddAPatientConsentOpen] = useState(false);
     const handleAddAPatientConsentToggle = () => setIsAddAPatientConsentOpen((prevState) => !prevState);
     return (
