@@ -1,2 +1,3 @@
-export * from './data-grid';
+export * from './DataGrid';
+
 export * from './data';
