@@ -3,7 +3,7 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { Box, Button, InputAdornment, TextField } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { IconButton } from "@/shared/ui/button";
+import { IconButton } from "@/shared/ui";
 import type { LoginFormSchema } from "@/features/login";
 import { loginFormSchema, LoginOptions } from "@/features/login";
 
