@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage } from "../pages/main";
+import { MainPage } from "@/pages/main";
+import { LoginPage } from "@/pages/login";
 
 export const appRouter = () =>
   createBrowserRouter([
@@ -10,6 +11,8 @@ export const appRouter = () =>
           path: "/",
           element: <MainPage />,
         },
+
+        { path: "/login", element: <LoginPage /> },
       ],
     },
   ]);
