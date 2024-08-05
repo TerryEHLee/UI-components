@@ -1,17 +1,11 @@
 import { Box, Grid, MenuItem, Select as MuiSelect } from '@mui/material';
-import type { SelectProps as MuiSelectProps } from '@mui/material';
 import type { ReactNode } from 'react';
 import { useState } from 'react';
-import { OutlinedButton } from 'src/new/components/ui/button/outlined-button';
-import { SelectOptionData } from 'src/new/components/ui/select/select-option-data';
-import { SearchTextField } from 'src/new/components/ui/text-field/search-text-field';
+import { OutlinedButton } from '@/shared/ui';
+import { SelectOptionData } from '@/shared/ui/select/data.ts'
+import { SearchTextField } from '@/shared/ui/textField/SearchTextField';
+import type { SelectProps } from './type';
 
-type SelectProps = MuiSelectProps & {
-    moduleName: string;
-    showTextFieldAndButton?: boolean;
-    placeholder?: string;
-    setSelectedInputFieldItem?: (value: string) => void;
-};
 
 export const Select = ({
     moduleName,

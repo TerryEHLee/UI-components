@@ -7,7 +7,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers-pro/LocalizationProvid
 import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { IconButton } from "@/shared/ui/button";
+import { IconButton } from "@/shared/ui";
 import { Checkbox } from '@/shared/ui/checkbox';
 import { DataGridPro } from '@/shared/ui/dataGrid';
 import { Modal } from '@/shared/ui/modal';

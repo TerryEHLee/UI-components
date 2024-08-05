@@ -1,8 +1,6 @@
 import { Grid, TextField } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { DatePicker } from 'src/new/components/ui/date-picker/date-picker';
-import { Select } from 'src/new/components/ui/select/select';
-import { PhoneTextField } from 'src/new/components/ui/text-field/phone-text-field';
+import { DatePicker, Select, PhoneTextField } from '@/shared/ui';
 
 export const InputFieldSelect = () => {
     const componentMap = {

@@ -1,5 +1,2 @@
-export {ContainedButton} from '@/shared/ui/button/ContainedButton.tsx'
+export {ContainedButton, IconButton, OutlinedButton} from '@/shared/ui/button/Button.tsx'
 
-export {IconButton} from '@/shared/ui/button/IconButton.tsx';
-
-export {OutlinedButton} from '@/shared/ui/button/OutlinedButton.tsx'
