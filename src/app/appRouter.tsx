@@ -1,18 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage } from "@/pages/main";
-import { LoginPage } from "@/pages/login";
+import { MainPage, LoginPage, EnrollmentPage } from "@/pages";
 
 export const appRouter = () =>
   createBrowserRouter([
     {
-      // element: baseLayout,
-      children: [
-        {
-          path: "/",
-          element: <MainPage />,
-        },
-
-        { path: "/login", element: <LoginPage /> },
-      ],
+      path: "/",
+      element: <MainPage />,
     },
+    {
+      path: "/login",
+      element: <LoginPage />,
+    },
+    {
+      path: "/enrollment",
+        element: <EnrollmentPage /> },
   ]);
