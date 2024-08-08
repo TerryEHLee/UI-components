@@ -1,12 +1,7 @@
 import { Drawer } from '@mui/material';
 import { useEffect, useState } from 'react';
 
-/**
- *
- * @param {(value: boolean) => {}} onToggleHeader
- * @returns {JSX.Element}
- * @constructor
- */
+
 export function LeftMenu({ onToggleHeader }) {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +28,7 @@ export function LeftMenu({ onToggleHeader }) {
 				<nav className="gnb">
 					<ul className="depth01">
 						<li className="menu-home">
-							<a href="#">
+							<a href="/">
 								<i className="icon icon--home"></i>
 								<div className="menu-txt">
 									<span>Dashboard</span>
@@ -41,7 +36,7 @@ export function LeftMenu({ onToggleHeader }) {
 							</a>
 						</li>
 						<li className="menu-patient on">
-							<a href="#">
+							<a href="/patient">
 								<i className="icon icon--patient"></i>
 								<div className="menu-txt">
 									<span>Patient Profile</span>
@@ -58,7 +53,7 @@ export function LeftMenu({ onToggleHeader }) {
 							</a>
 						</li>
 						<li className="menu-rpm">
-							<a href="#">
+							<a href="/enrollment">
 								<i className="icon icon--rpm"></i>
 								<div className="menu-txt">
 									<span>RPM</span>
