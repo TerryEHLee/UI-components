@@ -26,9 +26,7 @@ export const EnrollmentView = () => {
 
     return (
         <main className={isOpen ? 'main open' : 'main'}>
-            <section className="content">
-                <Header pageTitle="Enrollment Page" />
-            </section>
+          
             <Box className="cont-body">
                 <Grid container spacing={1} sx={{ mb: 1 }} alignItems="flex-end">
                     <Grid item xs={1}>

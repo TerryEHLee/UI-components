@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage, LoginPage, EnrollmentPage } from "@/pages";
+import { MainLayout } from "./layouts";
 
-export const appRouter = () =>
+export const AppRouter = () =>
+
   createBrowserRouter([
     {
       path: "/",
@@ -12,6 +14,13 @@ export const appRouter = () =>
       element: <LoginPage />,
     },
     {
-      path: "/enrollment",
-        element: <EnrollmentPage /> },
-  ]);
+      element: <MainLayout />, 
+      children: [
+        
+        {
+          path: "/enrollment",
+          element: <EnrollmentPage />,
+        },
+      ],
+    },
+  ])
