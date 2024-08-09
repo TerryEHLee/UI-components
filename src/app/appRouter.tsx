@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, LoginPage, EnrollmentPage } from "@/pages";
+import { MainPage, LoginPage, EnrollmentPage, PatientPage } from "@/pages";
 import { MainLayout } from "./layouts";
 
 export const AppRouter = () =>
@@ -21,6 +21,10 @@ export const AppRouter = () =>
           path: "/enrollment",
           element: <EnrollmentPage />,
         },
+        {path: "/patient",
+          element: <PatientPage/>
+        },
+
       ],
     },
   ])

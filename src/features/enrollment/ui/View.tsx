@@ -1,7 +1,6 @@
 import { FilterAltOff, Search } from '@mui/icons-material';
 import { Box, Grid, InputAdornment, InputLabel, TextField } from '@mui/material';
 import { useState } from 'react';
-import { Header } from '@/app/layouts/Header.tsx';
 import { useModalStore } from '@/shared/lib/ModalState';
 import type { ModalState } from '@/shared/lib/ModalState';
 import {
@@ -26,7 +25,6 @@ export const EnrollmentView = () => {
 
     return (
         <main className={isOpen ? 'main open' : 'main'}>
-          
             <Box className="cont-body">
                 <Grid container spacing={1} sx={{ mb: 1 }} alignItems="flex-end">
                     <Grid item xs={1}>
