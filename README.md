@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# UI 공통 컴포넌트 설계
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+###📌 기술스택
+typeScript, react, vite, MUI, zustand, react-hook-form, zod
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###📌 개요
+MUI 라이브러리 기반의 공통컴포넌트를 FSD(Featured Sliced Design) 아키텍처 패턴을 적용하여 개발함
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+###📌 페이지
+* main: 각 페이지로 이동할 수 있는 간단한 링크
+* login: 로그인 페이지, 유효성 검사 폼, 실제 로그인 api 연동은 생략
+* patient, enrollment: 공통 UI 라이브러리를 사용하여 UI 컴포넌트 구성
