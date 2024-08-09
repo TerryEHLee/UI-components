@@ -1,0 +1,1 @@
+export * from '@/pages/enrollment/ui/Page.tsx'
